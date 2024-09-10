@@ -20,33 +20,80 @@
 <hr>
 <br>
 <br>
-        <h2>Tag &lt;table&gt;</h2><br>
+        <h2>Tag &lt;table&gt;</h2>
             <p>Criação da tabela usando a tag &lt;table&gt;</p>
-            <table summary="tabela de idades" border="1" width="250" cellspacing="2" cellpadding="2">
+            <table summary="tabela de idades dos alunos do professor Xavier" border="1" width="250" cellspacing="2" cellpadding="2">
                 <tr>
-                    <td> Nome</td>
-                    <td>Idade</td>
+                    <th title="Nome completo dos alunos"> Nome</th>
+                    <th title="Idade no início do ano letivo">Idade</th>
                 </tr>
                 <tr id="1">
-                    <td>Asdrubal</td>
+                    <td>Asdrubal Pavlov</td>
                     <td>03</td>
                 </tr>
                 <tr id="2">
-                    <td>Maragate</td>
+                    <td>Maragate Tchaikovski</td>
                     <td>02</td>
                 </tr>
                 <tr id="3">
-                    <td>Genival</td>
+                    <td>Genival d'Arezzo</td>
                     <td>02</td>
                 </tr>
                 <tr id="4">
-                    <td>Teófilo</td>
+                    <td>Teófilo Khan</td>
                     <td>04</td>
                 </tr>
                 <tr id="5">
-                    <td>Antonieta</td>
+                    <td>Antonieta d'Arc</td>
                     <td>04</td>
                 </tr>
             </table>
+<hr>
+<br>
+<br>
+        <h2>Tags &lt;thead&gt;, &lt;tbody&gt; e &lt;tfoot&gt;</h2>
+            <p>Modificações na tabela anterior usando as novas tags</p>
+            
+            <table summary="tabela de idades dos alunos do professor Xavier" border="1" width="250" cellspacing="2" cellpadding="2">
+                <caption><b>Idades dos alunos do prof. Xavier</b></caption>
+                <thead>
+                    <tr>
+                        <th title="Nome completo dos alunos"> Nome</th>
+                        <th title="Idade no início do ano letivo">Idade</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr id="1">
+                        <td>Asdrubal Pavlov</td>
+                        <td>03</td>
+                    </tr>
+                    <tr id="2">
+                        <td>Maragate Tchaikovski</td>
+                        <td>02</td>
+                    </tr>
+                    <tr id="3">
+                        <td>Genival d'Arezzo</td>
+                        <td>02</td>
+                    </tr>
+                    <tr id="4">
+                        <td>Teófilo Khan</td>
+                        <td>04</td>
+                    </tr>
+                    <tr id="5">
+                        <td>Antonieta d'Arc</td>
+                        <td>04</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td>Total</td>
+                        <td>5</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+
 </body>
 </html>
