@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulario de pedido</title>
+</head>
+<body>
+    
+    <form method="post">
+        <h2>Finalize sua pizza</h2>
+        <p><strong>Quais opcionais você deseja?</strong></p>
+        <input type="checkbox" name="opcional[]" value="queijo"> + queijo <br>
+        <input type="checkbox" name="opcional[]" value="calabresa"> + calabresa <br>
+        <input type="checkbox" name="opcional[]" value="bacon"> + bacon <br>
+        <input type="checkbox" name="opcional[]" value="azeitona"> + azeitona <br>
+        <br>
+
+        <p><strong>Borda recheada?</strong></p>
+        <input type="radio" name="borda" value="sim"> Sim<br>
+        <input type="radio" name="borda" value="não"> Não<br>
+        <br>
+        
+        <p><strong>Escolha sua bebida</strong></p>
+        <input type="checkbox" name="bebida[]" value="suco"> Suco<br>
+        <input type="checkbox" name="bebida[]" value="refri"> Refri<br>
+        <input type="checkbox" name="bebida[]" value="agua"> Água<br>
+        <input type="checkbox" name="bebida[]" value="nenhum"> Sem bebidas<br>
+        <br>
+
+        
+            <button tyoe="submit">Enviar pedido</button>
+    </form>
+    
+</body>
+</html>

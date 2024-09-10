@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>field_sets</title>
+    <style>
+        .row{
+            margin: 5px;
+        }
+        
+        label{
+            width: 100px;
+            text-align: right;
+            display: inline-block;
+            padding-right: 5px;
+        }
+        fieldset{
+            margin: 10px 0;
+            border-radius: 15px;
+            border-color: #54c1ec;
+        }
+
+        button{
+            background-color: #54c1ec;
+            color: aliceblue;
+            border: 1px solid #000;
+        }
+
+    </style>
+
+</head>
+<body>
+<form method="post">
+
+    <h1>Formulário de cadastro</h1>
+<hr>
+    <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="row">
+            <label>Nome:</label><input type="text" />
+            <label>E-mail:</label><input type="text" />        
+        </div>
+
+        <div class="row">
+            <label>Profissão: </label><input type="text" />
+            <label>Empresa: </label><input type="text" />
+        </div>
+    </fieldset>
+
+    <fieldset>
+        <legend>Endereço</legend>
+        <div class="row">
+            <label>Endereço: </label><input type="text" />
+            <label>Número: </label><input type="number" />
+        </div>
+        
+        <div class="row">
+            <label>Bairro:</label><input type="text" />
+        </div>
+
+        <div class="row">
+            <label>Cidade/UF:</label><input type="text" />
+        </div>
+</fieldset>
+
+    <fieldset>
+        <legend>Contato</legend>
+        <div class="row">
+            <label>Telefone: </label><input type="number" />
+            <label>WhatsApp:</label><input type="number" />
+        </div>
+
+
+        <div class="row">
+            <label>LinkedIn:</label><input type="text" />
+            <label>Github:</label><input type="text" />
+        </div>
+</fieldset>
+<br>
+
+<button type="reset">Limpar</button> 
+<button type="submit">Enviar</button>
+
+</form>
+
+
+
+
+
+</body>
+</html>

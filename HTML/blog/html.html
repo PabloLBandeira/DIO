@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html</title>
+</head>
+<body>
+    <h1 id="inicio">HTML</h1>
+    <small><a href="home.html">Inicio</a></small>
+    <hr>
+
+    <h2>Aprendendo HTML do zero</h2>
+    <p>Aqui começa a sua jornada para aprender HTML, uma das linguagens mais usadas atualmente. Navegue pela lista abaixo para saber mais sobre cada assunto</p>
+
+    
+<!--tópicos com os assunto do curso-->
+    <ol>
+        <li><a href="#o que e">O que é</a></li>
+        <li><a href="#inspetor">Inspetor de elementos</a></li>
+        <li><a href="#estrutura">Estrutura de elementos</a></li>
+        <li><a href="#tags">Tags</a></li>
+        <li><a href="#textos">Textos</a></li>
+        <li><a href="#listas">Listas ordenadas e não ordenadas</a></li>
+        <li><a href="#links">Links</a></li>
+    </ol>
+
+<!--tópicos explicativos do curso-->
+    <h2 id="o que e">O que é</h2>
+        
+        <p>HTML (HyperText Markup Language) é a linguagem padrão usada para criar páginas da web. Ele organiza o conteúdo em elementos como títulos, parágrafos, 
+        links e imagens, definindo a estrutura e a semântica da página. Navegadores interpretam o HTML para exibir as páginas aos usuários.</p>
+        <small><a href="#inicio">Inicio</a></small>
+
+    <h2 id="inspetor">Inspetor de elementos</h2>
+        
+        <p>O Inspetor de Elementos é uma ferramenta dos navegadores que permite ver e editar o código HTML, CSS e JavaScript de um site em tempo real. Com ele, 
+        você pode entender como as páginas são construídas, testar alterações visuais ou funcionais, e até corrigir erros no código sem precisar modificar o arquivo original. 
+        É super útil para aprender como tudo funciona na prática e experimentar mudanças antes de aplicá-las no projeto real.</p>
+        <small><a href="#inicio">Inicio</a></small>
+
+    <h2 id="estrutura">Estrutura de elementos</h2>
+        
+        <p>A estrutura de elementos em HTML é como o esqueleto de uma página web. Cada elemento é uma "caixinha" que representa algo, como um título, um parágrafo, uma imagem 
+            ou um link. Os elementos começam com uma tag de abertura (tipo &lt;p&gt; para parágrafos), têm o conteúdo dentro, e depois fecham com uma tag de fechamento (como &lt;p&gt;). 
+            Esses blocos organizam o conteúdo para que o navegador saiba o que mostrar e como mostrar.</p>
+            <small><a href="#inicio">Inicio</a></small>
+
+    <h2 id="tags">Tags</h2>
+        
+        <p>As tags são como etiquetas que indicam o que cada parte do conteúdo vai ser na página. Elas sempre ficam entre os sinais de "menor que" (<) e "maior que" (>). 
+        Por exemplo, a tag h1 indica um título principal, enquanto p indica um parágrafo. Quase todas as tags têm uma versão de abertura (&lt;p&gt;) e uma de fechamento (&lt;p&gt;),
+        e o conteúdo vai no meio delas. Cada tag tem um propósito, como estruturar texto, criar links ou inserir imagens.</p>
+        <small><a href="#inicio">Inicio</a></small>
+
+    <h2 id="textos">Textos</h2>
+        
+        <p>O texto dentro do HTML é o conteúdo que vai ser exibido na página para as pessoas. Esse texto é "organizado" pelas tags, que dizem ao navegador como mostrar cada parte. 
+        Por exemplo, se você colocar o texto dentro da tag `<&lt;h1&gt;>`, ele vai aparecer como um título grande, e se estiver dentro de "&lt;p&gt;", vai aparecer como um parágrafo normal.
+        Além disso, temos tags como "&lt;strong&gt;", que deixa o texto em negrito para destacar algo importante; "&lt;i&gt;", que deixa o texto em itálico; e &lt;small&gt;, que faz o texto ficar menor, 
+        geralmente usado para notas ou informações menos importantes. Essas tags ajudam a formatar o texto de formas específicas.</p>
+        <small><a href="#inicio">Inicio</a></small>
+
+    <h2 id="listas">Listas ordenadas e não ordenadas</h2>
+        
+        <p>As listas em HTML, como o próprio nome sugere são usadas para organizar itens em um formato de lista. Existem dois tipos principais:</p>
+        <p><strong>Lista ordenada:</strong> É uma lista em que os itens aparecem em uma ordem específica e são numerados automaticamente. Cada item é colocado dentro de uma tag &lt;li&gt; (list item), e o 
+        navegador exibe os números automaticamente.</p>
+        <p><strong>Exemplo:</strong></p>
+        
+        <blockquote><small><strong>entrada</strong></small></blockquote>
+        <pre><code>
+            &lt;ol&gt;
+              &lt;li&gt;item 1&lt;/li&gt;
+              &lt;li&gt;item 2&lt;/li&gt;
+              &lt;li&gt;item 3&lt;/li&gt;
+            &lt;/ol&gt;
+        </code></pre>
+
+        <blockquote><small><strong>saída</strong></small></blockquote>
+        <ol>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ol>
+
+        <p><strong>Lista mão ordenada:</strong> É uma lista em que os itens não têm uma ordem específica e são exibidos com marcadores.</p>
+
+        <blockquote><small><strong>entrada</strong></small></blockquote>
+        <pre><code>
+            &lt;ul&gt;
+              &lt;li&gt;item 1&lt;/li&gt;
+              &lt;li&gt;item 2&lt;/li&gt;
+              &lt;li&gt;item 3&lt;/li&gt;
+            &lt;/ul&gt;
+        </code></pre>
+
+        <blockquote><small><strong>saída</strong></small></blockquote>
+        <ul>
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+        </ul>
+
+        <small><a href="#inicio">Inicio</a></small>
+    
+    
+    <h2 id="links">Links</h2>
+        <p>Os links em HTML são elementos que permitem a navegação entre páginas, documentos ou recursos na web. Eles são criados com a tag &lt;a&gt;, que significa "anchor" 
+        (âncora), e são usados para conectar o conteúdo de uma página a outra página ou arquivo.</p>
+        
+        <p><strong>Estrutura básica do link:</strong></p>
+        <ul>
+            <li>&lt;a&gt;: tag que define o link.</li>
+            <li>&lt;href&gt;: endereço de destino do link, pode ser um site externo, uma página dentro do próprio site, uma sessão da página ou ainda links para download.</li>
+            <li>&lt;texto&gt;: texto visível ao usuário, é a parte clicável.</li>
+        </ul>
+
+        <h3>Tipos de link:</h3>
+        <p><strong>Externo:</strong> Direciona o usuário para outro site.</p>
+
+        <blockquote><small><strong>Entrada:</strong></small></blockquote>
+            &lt;a href="https://www.google.com">Visite o Google&lt;/a&gt;
+        
+        <blockquote><small><strong>Saída:</strong></small></blockquote>
+            <a href="https://www.google.com">Visite o Google</a>
+
+        <p><strong>Interno:</strong> Direciona o usuário para outra página dentro do próprio site.</p>
+
+        <blockquote><small><strong>Entrada</strong></small></blockquote>
+            &lt;a href="home.html"> Home &lt;/a&gt;
+
+        <blockquote><small><strong>Saída</strong></small></blockquote>
+            <a href="home.html">Home</a>
+
+        <p><strong>Âncora:</strong> Direciona o usuário para uma sessão específica da própria página.</p>
+
+        <blockquote><small><strong>Entrada</strong></small></blockquote>
+            <p><small><i>link que leva à sessão: </i></small>&lt;a href="#inicio">Início&lt;/a&gt;</p>
+            <p><small><i>sessão apontada pelo link: </i></small>id="inicio"inicio</p>
+
+        <blockquote><small><strong>Saída</strong></small></blockquote>
+            <p><small><i>link que leva à sessão: </i></small><a href="#inicio">Início</a></p>
+            
+
+        <h3>Atríbutos importantes</h3>
+            <p>Existem alguns atributos que podem ser usado nos links, eles são usados para guiar o tipo de navegação que o usuário terá. Abaixo alguns exemplos:</p>
+            <p><strong>target="_blank":</strong> faz com que o link seja aberto em uma nova aba ou janela do navegador.</p>
+            <p><strong>rel="noopener noreferrer":</strong> usado junto com <i>target="_blank"</i> para melhorar a segurança ao abrir links externos, evitando que a página de destino tenha acesso à página de origem.</p>
+
+        <p>
+        <small><a href="#inicio">Inicio</a></small>
+        </p>
+
+
+</body>
+</html>

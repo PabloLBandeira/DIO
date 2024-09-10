@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>embed</title>
+    </head>
+<body>
+    <h1>Teste de embed, video e iframe</h1>
+<hr>
+<br>
+        <h2>História do embed</h2>
+            <p>Nos sites mais antigos, a tecnologia de incorporação de conteúdo, como o uso de <b>&lt;embed&gt;</b>, era uma solução comum para incluir multimídia
+            e funcionalidades avançadas que não eram nativamente suportadas pelos navegadores da época. Abaixo, exploramos o uso de &lt;embed&gt;, Flash Player e 
+                plugins Java, bem como a evolução dessas tecnologias. </p>
+        
+            <p><b>Flash player</b></p>
+            <p>O elemento <b>&lt;embed&gt;</b> foi introduzido como uma forma de incorporar conteúdo multimídia, como vídeos e animações, diretamente nas páginas da web. Um 
+            dos usos mais notáveis do <b>&lt;embed&gt;</b> foi para incluir o Flash Player da Adobe, uma tecnologia amplamente utilizada para criar e exibir conteúdo multimídia 
+            interativo.</p>
+                <ul>
+                    <li><b>Início:</b> O Flash Player começou a ganhar popularidade no início dos anos 2000. A Adobe adquiriu o Flash em 2005, e a tecnologia se tornou um dos principais
+                    meios de criar animações ricas e interativas na web.</li>
+                    <li><b>Declínio e fim:</b> No entanto, a partir de 2010, surgiram preocupações sobre a segurança e a performance do Flash. Em 2017, a Adobe anunciou que descontinuaria
+                    o suporte ao Flash Player, e o suporte oficial foi encerrado em 31 de dezembro de 2020. As principais razões para o fim do Flash foram a sua natureza insegura e o 
+                    surgimento de tecnologias mais modernas, como HTML5, CSS3 e JavaScript, que ofereciam alternativas mais seguras e eficientes para a criação de conteúdo multimídia.</li>
+                </ul>
+
+            <P><b>Plugins Java</b></P>
+                <ul>
+                    <li><b>Início:</b> O uso de applets Java começou na década de 1990, quando os navegadores da web começaram a suportar plugins para executar código Java em páginas 
+                    da web.</li>
+                    <li><b>Declínio e fim:</b> Com o avanço das tecnologias web e o aumento de preocupações com segurança, os plugins Java começaram a cair em desuso. Problemas de segurança
+                    e compatibilidade, além da adoção crescente de tecnologias como HTML5 e JavaScript, levaram ao declínio dos plugins Java. A Oracle anunciou a descontinuação do suporte 
+                    a applets Java em 2015, e a maioria dos navegadores modernos retirou o suporte a plugins NPAPI (incluindo Java) a partir de 2015 e 2016.</li>
+                </ul>
+<br>
+                <h3>Tag embed</h3>
+                    <p>Na prática o embed era usado da seguinte forma:</p>
+                        <blockquote>
+                            <b>Entrada: </b><br>
+                            &lt;embed src="https://www.youtube.com/v/2gQmTnxqhh8"&gt;             
+                        
+                            <p><b>Saída</b></p>
+                            <embed src="https://www.youtube.com/v/2gQmTnxqhh8">
+                        </blockquote>
+
+<hr>
+<br>
+        
+        <h2>História da tag video</h2>
+            <p>A tag &lt;video&gt;, introduzida no HTML5 em 2014, representa uma evolução significativa na forma como os vídeos são incorporados e exibidos em páginas da web. Antes
+            de sua introdução, a exibição de vídeos na web dependia de tecnologias e plugins externos, como Flash Player e plugins Java, que apresentavam várias limitações e 
+            desafios.</p>
+            
+            <p><b>A Tag &lt;video&gt; e Seus Benefícios</b></p>
+                <ul>
+                    <li><b>Simplificação e Padronização:</b> A tag &lt;video&gt; oferece uma solução nativa e padronizada para a incorporação de vídeos em páginas web. Com ela, não é necessário
+                    depender de plugins ou tecnologias externas, o que simplifica o desenvolvimento e melhora a compatibilidade entre diferentes navegadores e dispositivos.</li>
+                    <li><b>Controle Nativo:</b> A tag &lt;video&gt; vem com controles integrados para reprodução, pausa e ajuste de volume, além de permitir o ajuste da largura e altura do player 
+                    diretamente no HTML.</li>
+                    <li><b>Suporte a Múltiplos Formatos:</b> Ela suporta vários formatos de vídeo, como MP4, WebM e Ogg, oferecendo flexibilidade para diferentes necessidades e preferências de 
+                    codificação.</li>
+                </ul>
+
+            <p><b>Descontinuidade do Suporte pelo YouTube</b></p>
+            No passado, o YouTube oferecia suporte para a tag &lt;video&gt; em seus próprios players incorporados, permitindo que os usuários incorporassem vídeos diretamente em suas páginas 
+            web. No entanto, com a evolução da plataforma e a introdução de novas funcionalidades, o YouTube descontinuou o suporte direto para a tag &lt;video&gt; em favor de seu próprio 
+            sistema de incorporação, que utiliza a tag <b>&lt;iframe&gt;</b>.
+
+
+            <h3>Tag video</h3>
+                <p>Na prática a tag video funciona da seguinte forma:</p>
+                    <blockquote>
+                        <b>Entrada:</b><br>
+                        &lt;video src="file:///C:/Users/User/Desktop/video" width="400" height="250"&gt;
+
+                        <p><b>Saída</b></p>
+                        <video controls autoplay width="400" height="250">
+                            <source src="file:///C:/Users/User/Desktop/video" type="video/mp4">
+                        </video>
+                    </blockquote>
+                    <p>*O navegador pode ter problemas para executar vídeos salvos no servidor local</p>
+<hr>
+<br>
+
+        <h2>Tag iframe</h2>
+            <p>A tag <b>&lt;iframe&gt;</b> (inline frame) é usada para incorporar um documento HTML dentro de outro documento HTML. Desde o início da web, a tag <b>&lt;iframe&gt;</b> 
+            tem sido amplamente utilizada para inserir conteúdo externo, como vídeos, mapas e páginas web, em uma página principal sem a necessidade de redirecionamento.</p>
+
+            <p><b>Por Que Usar a Tag &lt;iframe&gt;?</b></p>
+            <ul>
+                <li><b>Incorporação de Conteúdo Externo:</b> A principal função do &lt;iframe&gt; é carregar conteúdo externo em uma página web. Isso inclui vídeos do YouTube, mapas
+                do Google, widgets de redes sociais e até mesmo outras páginas web.</li>
+                <li><b>Separação de Conteúdo:</b> Usar &lt;iframe&gt; permite que o conteúdo carregado funcione de maneira independente do código principal da página. Isso é útil para evitar 
+                conflitos de estilos ou scripts entre as duas fontes.</li>
+                <li><b>Flexibilidade:</b> O &lt;iframe&gt; permite aos desenvolvedores controlar o tamanho da janela de exibição e personalizar sua aparência com CSS, facilitando a 
+                integração com o design da página.</li>                 
+            </ul>
+        
+            <h3>Tag ifram</h3>
+                <p>Na prática a tag iframe funciona da seguinte forma:</p>
+                    <blockquote>
+                        <b>Entrada:</b><br>
+                        &lt;iframe width="400" height="250" src="https://www.youtube.com/embed/2gQmTnxqhh8">&lt;/iframe&gt;
+
+                        <p><b>Saída:</b></p>
+                        <iframe width="400" height="250" src="https://www.youtube.com/embed/2gQmTnxqhh8"></iframe>
+                    </blockquote>
+        
+        
+
+
+                    
+</body>
+</html>
