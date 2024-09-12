@@ -7,12 +7,26 @@
 
     <style>
         table {
-            border: solid 1px #0a4974;
+            box-shadow: 13px 12px 15px 0px rgba(0,0,0,0.76);
+            -webkit-box-shadow: 13px 12px 15px 0px rgba(0,0,0,0.76);
+            -moz-box-shadow: 13px 12px 15px 0px rgba(0,0,0,0.76);            
+            border: solid 1px #c9f4ff;
         }
 
         table thead th {
             background-color: #0a4974;
             color: whitesmoke;
+        }
+        table tfoot td {
+            background-color: #0a4974;
+            color: antiquewhite;
+        }
+        table tbody tr:nth-child(even) td {
+            background-color: lightblue;
+        }
+        table tbody tr:hover td {
+            background-color: lightgray;
+            cursor: pointer;
         }
     </style>
 
@@ -23,7 +37,7 @@
         <p>Estilização da tabela anterior usando <i>CSS.</i></p>
 
         <table summary="tabela de idades dos alunos do professor Xavier" width="250" cellspacing="0" cellpadding="2">
-            <caption><b>Idades dos alunos do prof. Xavier</b></caption>
+            <caption><b><u>Idades dos alunos do prof. Xavier</u></b></caption>
             <thead>
                 <tr>
                     <th title="Nome completo dos alunos"> Nome</th>
