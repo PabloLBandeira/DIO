@@ -83,3 +83,21 @@ caption {
     text-align: left;
     margin-bottom: 10px;
 }
+
+.row {
+    margin: 5px;
+}
+
+label {
+    width: 100px;
+    text-align: right;
+    display: inline-block;
+    padding: 5px;
+}
+
+button {
+    background-color: #03244F;
+    color: #f1f1f1;
+    border: 1px solid black;
+    margin: 5px;
+}
