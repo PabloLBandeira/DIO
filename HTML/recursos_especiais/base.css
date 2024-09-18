@@ -1,0 +1,28 @@
+kbd {
+    border: solid 1px black;
+}
+
+code {
+    font-style: italic;
+    background-color: lightgray;
+    color: red;
+}
+
+pre {
+    background-color: lightgray;
+}
+
+pre code {
+    font-style: italic;
+    background-color: lightgrey;
+    color: red;
+}
+
+pre p {
+    font-style: italic;
+    color: lightcoral;
+}
+
+details {
+    
+}
