@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>select e datalist</title>
+    <link rel="stylesheet" href="base.css">
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Select e datalist</h1>
+            <p>Esses elementos ajudam a criar formulários mais interativos e fáceis de usar, melhorando a experiência geral do usuário em aplicações web.</p>
+
+            <h2>Select</h2>
+                <p>O elemento <code>&lt;select&gt;</code> é utilizado para criar uma lista suspensa que permite ao usuário escolher uma opção a partir de um conjunto predefinido. 
+                É ideal para:</p>
+
+                    <ul>
+                        <li><b>Opções Limitadas:</b> Quando você tem um número fixo de opções, como categorias de produtos, estados, ou seleções de menu.</li>
+                        <li><b>Acessibilidade:</b> O <code>&lt;select&gt;</code> é nativo do HTML, o que o torna acessível e fácil de usar, especialmente para navegação por teclado e suporte a leitores de tela.</li>
+                    </ul>
+
+                <pre>
+                    <p>Exemplo de código</p>
+                    <code>
+                        &lt;select name="browsers"&gt;
+                            &lt;option value=""&gt;Selecione seu navagador&lt;/option&gt;
+        
+                            &lt;option value="chrome"&gt;Google Chrome&lt;/option&gt;
+                            &lt;option value="firefox"&gt;Moxila Firefox&lt;/option&gt;
+                            &lt;option value="edge"&gt;Microsoft Edge&lt;/option&gt;
+                            &lt;option value="safari"&gt;Safari&lt;/option&gt;
+                            &lt;option value="opera"&gt;Opera&lt;/option&gt;
+                        &lt;/select&gt;
+                    </code>
+                </pre>
+
+                    <h3>Visão do usuário</h3>
+
+                        <select name="browsers">
+                            <option value="">Selecione seu navagador</option>
+
+                            <option value="chrome">Google Chrome</option>
+                            <option value="firefox">Moxila Firefox</option>
+                            <option value="edge">Microsoft Edge</option>
+                            <option value="safari">Safari</option>
+                            <option value="opera">Opera</option>
+                        </select>
+
+    <hr>  
+
+            <h2>Datalist</h2>
+                <p>O elemento <code>&lt;datalist&gt;</code> é utilizado para fornecer uma lista de sugestões que podem ser associadas a um campo de entrada. É ideal para:</p>
+                
+                        <ul>
+                            <li><b>Sugestões de Preenchimento Automático:</b> Quando você deseja ajudar os usuários a encontrar rapidamente uma opção ao digitarem.</li>
+                            <li><b>Flexibilidade:</b> Permite que os usuários escolham uma opção da lista ou insiram um valor que não está listado.</li>
+                        </ul>
+
+                <pre>
+                    <p>Exemplo de código</p>
+                    <code>
+                        &lt;input list="browsers" type="search" name="search"&gt;
+                            &lt;datalist id="browsers"&gt;
+                                &lt;option &gt;Google Chrome&lt;/option&gt;
+                                &lt;option &gt;Moxila Firefox&lt;/option&gt;
+                                &lt;option &gt;Microsoft Edge&lt;/option&gt;
+                                &lt;option &gt;Safari&lt;/option&gt;
+                                &lt;option &gt;Opera&lt;/option&gt;
+                            &lt;/datalist&gt;
+                    </code>
+                </pre>
+
+                    <h3>Visão do usuário</h3>
+
+                <input list="browsers" type="search" name="search">
+                    <datalist id="browsers">
+                        <option >Google Chrome</option>
+                        <option >Moxila Firefox</option>
+                        <option >Microsoft Edge</option>
+                        <option >Safari</option>
+                        <option >Opera</option>
+                    </datalist>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+</body>
+</html>

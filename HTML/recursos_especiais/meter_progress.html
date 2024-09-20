@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+
+</head>
+<body>
+
+    <header></header>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+    <h2>Meter</h2>    
+        <p>O elemento <code>&lt;meter&gt;</code> é utilizado para representar um valor escalar dentro de um intervalo conhecido. É ideal para mostrar medições que têm um valor 
+        máximo e um mínimo definidos, como:</p>
+            <ul>
+                <li><b>Medidas de desempenho:</b> Por exemplo, uso de CPU ou memória em um aplicativo</li>
+                <li><b>Avaliações:</b> Como a porcentagem de conclusão de uma tarefa ou projeto em relação a um total.</li>
+                <li><b>Resultados de medições:</b> Como a quantidade de chuva em um determinado período em comparação com um valor máximo.</li>
+            </ul>
+    
+        <h3>Características</h3>
+            <ul>
+                <li><b>Valor Escalar:</b> O <code>&lt;meter&gt;</code> é mais apropriado quando você quer indicar um valor que faz parte de um conjunto de dados, 
+                como uma porcentagem ou uma medição específica.</li>
+                <li><b>Interatividade:</b> Pode incluir etiquetas e descrições que ajudam a contextualizar o valor apresentado.</li>
+            </ul>
+
+        <pre>
+            <p>Exemplo de código</p>
+                <code>
+                    &lt;meter max="100" min="0" value="25"&lt;&gt;/meter&gt;
+                </code>
+        </pre>
+        <meter max="100" min="0" value="25"></meter>
+    
+    <h2>Progress</h2>
+        <p>O elemento <code>&lt;progress&gt;</code> é usado para mostrar o progresso de uma tarefa em andamento. É ideal para:</p>
+            <ul>
+                <li><b>Indicadores de carregamento:</b> Mostrando o progresso de download ou upload de arquivos.</li>
+                <li><b>Operações de longa duração:</b> Como o processamento de uma tarefa ou a instalação de software.</li>
+            </ul>
+        <h3>Características</h3>
+            <ul>
+                <li><b>Progressão:</b> O <code>&lt;progress&gt;</code> é mais indicado quando você deseja mostrar um estado de progresso em tempo real, que pode ser atualizado à medida que a tarefa avança.</li>
+                <li><b>Simples e Direto:</b> É geralmente usado para indicar uma operação em andamento, e o valor final é muitas vezes conhecido, como 100% para concluir.</li>
+            </ul>
+
+        <pre>
+            <p><p>Exemplo de código</p></p>
+                <code>
+                    &lt;progress id="progress" max="100" min="0" value="0"&gt;&lt;/progress&gt;
+            
+            &lt;script&gt;
+                var progress = document.getElementById('progress');
+                const interval = setInterval(() => {
+                    progress.value += 10;
+                    if (progress.value >= 100) {
+                        alert('concluído')
+                        clearInterval(interval)
+                    }
+                        
+                }, 1000);
+        &lt;/script&gt;
+            </code>
+        </pre>
+
+        <progress id="progress" max="100" min="0" value="0"></progress>
+        
+        <script>
+            var progress = document.getElementById('progress');
+            const interval = setInterval(() => {
+                progress.value += 10;
+                if (progress.value >= 100) {
+                    alert('concluído')
+                    clearInterval(interval)
+                }
+                    
+            }, 1000);
+        </script>
+    </main>
+
+    <footer>
+        
+    </footer>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>code kbd pre</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <ul>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+
+        <h1>Code, kbd e pre</h1>
+            <p>Esses elementos ajudam a organizar e apresentar informações técnicas de maneira clara e acessível, melhorando a experiência do usuário em documentos e páginas web.</p>
+
+            <h2>code</h2>
+                <p>O elemento <code>&lt;code&gt;</code> é usado para representar trechos de código de programação ou texto que deve ser exibido em uma fonte monoespaçada. 
+                É ideal para:</p>
+
+                    <ul>
+                        <li><b>Código em Documentação:</b> Quando você deseja destacar um pequeno trecho de código em um contexto maior, como em tutoriais, artigos ou documentação.</li>
+                        <li><b>Exibição de Sintaxe:</b> Para mostrar expressões específicas, comandos ou funções de uma linguagem de programação.</li>
+                    </ul>
+
+                <h3>Formatação não semântica</h3>
+                    <p>Texto formatado sem levar em consideração a otimização semântica.</p>
+
+                    <pre>
+                        <p>Exemplo de código</p>
+                        &lt;blockquote&gt;
+                            &lt;p&gt;Para estilizar seu HTML use:&lt;/p&gt;
+                            &lt;p&gt;code {&lt;br&gt;
+                                font-style: italic;&lt;br&gt;
+                                background-color: lightgrey;&lt;br&gt;
+                                color: red;&lt;br&gt;
+                            }&lt;/p&gt;
+                        &lt;/blockquote&gt;
+                    </pre>
+                    
+                    <p style="color: lightcoral;" ><i>Visão do usuário</i></p>
+                    <blockquote>
+                        <p>Para estilizar seu HTML use:</p>
+                        <p>code {<br>
+                            font-style: italic;<br>
+                            background-color: lightgrey;<br>
+                            color: red;<br>
+                        }</p>
+                    </blockquote>
+                   
+
+
+                <h3>Formatação semântica</h3>
+                    <p>Texto formatado de maneira semântica.</p>
+
+                    <pre>
+                        <p>Exemplo de Código</p>
+                        <code>
+                            &lt;code&gt;
+                                code {
+                                    font-style: italic;
+                                    background-color: lightgrey;
+                                    color: red;
+                                    } 
+                            &lt;/code&gt;
+                        </code>
+                    </pre>
+                        <pre>
+                            <p>Visão do usuário</p>
+                                <code>
+                                    code {
+                                        font-style: italic;
+                                        background-color: lightgrey;
+                                        color: red;
+                                        } 
+                                </code>
+                        </pre>
+<hr>
+
+            <h2>kbd</h2>
+                <p>O elemento <code>&lt;kbd&gt;</code> é utilizado para representar a entrada do teclado. É ideal para:</p>
+                    <ul>
+                        <li><b>Comandos e Atalhos de Teclado:</b> Quando você quer indicar quais teclas devem ser pressionadas pelo usuário, como combinações de teclas ou sequências.</li>
+                        <li><b>Instruções Interativas:</b> Para destacar interações que dependem de entradas do teclado.</li>
+                    </ul>
+
+                    <h3>Formatação não semântica</h3>
+                        <pre>
+                            <p>Exemplo de código</p>
+                            Para copiar esta informação, pressione &lt;b&gt;&lt;i&gt;CTRL&lt;/i&gt;&lt;/b&gt; + &lt;b&gt;&lt;i&gt;C&lt;/i&gt;&lt;/b&gt;.
+                        </pre>
+
+                        <pre>
+                            <p>Visão do usuário</p>
+                            Para copiar esta informação, pressione<b><i> CTRL</i></b> + <b><i>C</i></b>
+                        </pre>
+                        
+                    <h3>Formatação semântica</h3>
+                        <pre>
+                            <p>Exemplo de Código</p>
+                            Para copiar esta informação, pressione &lt;kbd&gt; CTRL&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;.
+                        </pre>
+
+                        <pre>
+                            <p>Visão do usuário</p>
+                            Para copiar esta informação, pressione <kbd> CTRL</kbd> + <kbd>C</kbd>.
+                        </pre>
+
+<hr>                        
+
+            <h2>pre</h2>
+                <p>Use a tag &lt;pre&gt; quando precisar que a formatação original do texto seja mantida, como em códigos de programação ou na apresentação de dados estruturados.</p>
+                    <ul>
+                        <li><b>Preservação de Espaços:</b> O texto dentro da tag &lt;pre&gt; não ignora espaços em branco adicionais, ao contrário do que ocorre em outras tags HTML.</li>
+                        <li><b>Quebras de Linha:</b> Quebras de linha são respeitadas, permitindo que o texto apareça em várias linhas conforme definido.</li>
+                        <li><b>Fonte Monoespaçada:</b> O texto dentro de &lt;pre&gt; geralmente é exibido em uma fonte monoespaçada (como Courier), o que facilita a leitura de código ou de textos que exigem alinhamento.</li>
+                    </ul>
+
+                <pre>
+                    <p>Exemplo de Código</p>
+                    <code>
+                        &lt;pre&gt;
+                            &lt;code&gt;
+                            &lt;li&gt;&lt;b&gt;Comandos e Atalhos de Teclado:&lt;/b&gt;
+                            &lt;/code&gt;
+                        &lt;/pre&gt;
+                    </code>
+                </pre>
+
+                <pre>
+                    <p>Visão do usuário</p>
+                    <code>
+                        <li><b>Comandos e Atalhos de Teclado:</b>
+                    </code>
+                </pre>
+    
+    </main>
+
+</body>
+</html>
