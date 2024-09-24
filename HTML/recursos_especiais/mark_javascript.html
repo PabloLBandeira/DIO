@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="base.css">
+
 </head>
 <body>
 
@@ -29,6 +31,50 @@
                     <li><b>Uso Semântico:</b>Usar <code>&lt;mark&gt;</code> indica que o texto possui um significado especial, como termos-chave em um artigo ou resultados de busca.</li>
                     <li><b>Acessibilidade:</b>A tag <code>&lt;mark&gt;</code> melhora a acessibilidade, permitindo que tecnologias assistivas, como leitores de tela, identifiquem rapidamente o texto destacado.</li>
                 </ul>
+
+            <pre>
+                <p>Exemplo de Código</p>
+                <code>
+                    &lt;input type="text" id="busca" placeholder="Digite sua busca"&gt;
+                    &lt;p id="texto"&gt;O desenvolvimento de software é um processo complexo e dinâmico que envolve a criação, manutenção e aprimoramento de sistemas e 
+                    aplicativos. Este campo abrange várias etapas, desde a concepção da ideia até a implementação e testes. A fase inicial, chamada de levantamento 
+                    de requisitos, é crucial, pois permite entender as necessidades dos usuários e as funcionalidades desejadas.Uma vez definidos os requisitos, 
+                    inicia-se o design do software, onde arquitetos e desenvolvedores planejam a estrutura e a interação dos componentes. O desenvolvimento propriamente 
+                    dito envolve a codificação, onde os programadores transformam as especificações em linhas de código, utilizando diferentes linguagens de programação 
+                    como Python, Java e JavaScript.&lt;/p&gt;        
+            &lt;script&gt;
+                const input = document.getElementById('busca');
+                const texto = document.getElementById('texto');
+        
+                input.addEventListener('input', () => {
+                    const termoBusca = input.value.toLowerCase();
+                    const regex = new RegExp(`\\b${termoBusca}\\b`, 'gi');
+                    texto.innerHTML = texto.textContent.replace(regex, '&lt;mark&gt;$&&lt;/mark&gt;');
+                });
+            &lt;/script&gt;
+                </code>
+            </pre>
+
+
+            
+                <p>Exemplo de Código</p>
+                <input type="text" id="busca" placeholder="Digite sua busca">
+                <p id="texto">O desenvolvimento de software é um processo complexo e dinâmico que envolve a criação, manutenção e aprimoramento de sistemas e 
+                aplicativos. Este campo abrange várias etapas, desde a concepção da ideia até a implementação e testes. A fase inicial, chamada de levantamento 
+                de requisitos, é crucial, pois permite entender as necessidades dos usuários e as funcionalidades desejadas.Uma vez definidos os requisitos, 
+                inicia-se o design do software, onde arquitetos e desenvolvedores planejam a estrutura e a interação dos componentes. O desenvolvimento propriamente 
+                dito envolve a codificação, onde os programadores transformam as especificações em linhas de código, utilizando diferentes linguagens de programação 
+                como Python, Java e JavaScript.</p>        
+                    <script>
+                        const input = document.getElementById('busca');
+                        const texto = document.getElementById('texto');
+                    
+                        input.addEventListener('input', () => {
+                            const termoBusca = input.value.toLowerCase();
+                            const regex = new RegExp(`\\b${termoBusca}\\b`, 'gi');
+                            texto.innerHTML = texto.textContent.replace(regex, '<mark>$&</mark>');
+                            });
+                    </script>
 
     </main>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>canvas</title>
     <link rel="stylesheet" href="base.css">
 </head>
 <body>
@@ -22,6 +22,129 @@
     </header>
 
     <main>
+        <h1>Canvas</h1>
+            <p>texto sobre o canvas</p>
+
+            <h2>Imagem estática</h2>
+        
+                <canvas 
+                    id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+                </canvas>
+                    <script>
+                        var c = document.getElementById("myCanvas");
+                        var ctx = c.getContext("2d");
+                        ctx.moveTo(0, 0);
+                        ctx.lineTo(200, 100);
+                        ctx.stroke();
+                    </script>
+
+            <h2>imagem dinâmica</h2>
+
+                <canvas id="canvas"></canvas>
+                    <script>
+                        canvas=document.querySelector("#canvas");
+                        ctx=canvas.getContext("2d");
+
+                        canvas.width=800;
+                        canvas.height=400;
+                        canvasEndx=canvas.width;
+                        canvasEndy=canvas.height;
+
+                        y0=canvas.height/2;
+
+                        amp=100;   
+                        tp=500;    
+                        f1=0
+                        f2=0;
+                        f3=0;
+
+
+                        class Wave{
+                        constructor(x,y,d,f1,f2,f3){
+                            this.x=0;
+                            this.y=y0;
+                            this.d=0;
+                            this.f1=0;
+                            this.f2=0;
+                            this.f3=0;
+                        }
+
+                        draw(){
+                            ctx.save();
+                            ctx.strokeStyle="red";
+                            ctx.beginPath();
+                            ctx.moveTo(0,canvas.height/2);
+                            ctx.lineTo(canvas.width,canvas.height/2);
+                            ctx.moveTo(canvas.width/2,0);
+                            ctx.lineTo(canvas.width/2,canvas.height);
+                            ctx.stroke();
+                            ctx.restore();
+
+                            //yellow
+                            ctx.save();
+                            ctx.strokeStyle="yellow";
+                            ctx.beginPath();
+                            ctx.moveTo(0,y0);
+                            for(this.x=0;this.x<canvas.width;this.x++){
+                            this.y=amp*Math.sin((Math.PI/tp)*(this.x+this.d+this.f1));
+                            ctx.lineTo(this.x,this.y+y0);
+                            }
+                            ctx.stroke();
+
+
+                            //blue
+
+                            ctx.strokeStyle="blue";
+                            ctx.beginPath();
+                            ctx.moveTo(0,y0);
+                            for(this.x=0;this.x<canvas.width;this.x++){
+                            this.y=amp*Math.sin((Math.PI/tp)*(this.x+this.d+this.f2));
+                            ctx.lineTo(this.x,this.y+y0);
+                            }
+                            ctx.stroke();
+
+                            //red
+
+                            ctx.strokeStyle="red";
+                            ctx.beginPath();
+                            ctx.moveTo(0,y0);
+                            for(this.x=0;this.x<canvas.width;this.x++){
+                            this.y=amp*Math.sin((Math.PI/tp)*(this.x+this.d+this.f3));
+                            ctx.lineTo(this.x,this.y+y0);
+                            }
+                            ctx.stroke();
+                            ctx.restore();
+
+                        }
+
+                        move(){
+                            this.d=this.d+5;
+                            this.f1=this.f1+5
+                            this.f2=this.f2+10;
+                            this.f3=this.f3+15;
+                        }
+                        }
+
+                        const wave=new Wave();
+
+                        const anime =()=>{
+                        ctx.clearRect(0,0,canvas.width,canvas.height);
+                        ctx.fillStyle="black";
+                        ctx.fillRect(0,0,canvas.width,canvas.height);
+
+                        wave.draw();
+                        wave.move();
+
+                        requestAnimationFrame(anime);
+                        }
+
+                        const loading =()=>{
+                        anime();
+                        }
+
+                        window.addEventListener('load',loading);
+                    </script>
+
 
     </main>
 
