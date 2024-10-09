@@ -11,6 +11,52 @@ a { color:blue; text-decoration: none;}
     border-top: solid 1px #cdcdcd;
     border-bottom: solid 1px #cdcdcd;
 }
+
+.header{
+    display: flex;
+    align-items: center;
+    background: linear-gradient(grey, green);
+}
+
+.header span{
+    position: absolute;
+    left: 50%;
+    font-size: xx-large;
+    font-weight: bolder;
+}
+
+.header nav {
+    position: relative;
+    bottom: -65px;
+    left: 170px;
+}
+
+.header nav ul {
+    position: absolute;
+    display: flex;
+    list-style: none;
+    margin: 2px;
+}
+
+.header nav ul li {
+    margin-left: 20px;
+}
+
+.header nav ul li a{
+    color: whitesmoke;  
+    font-size: large;  
+}
+
+.header nav ul li a:hover {
+    color: antiquewhite;
+    background-color: rgba(127, 255, 212, 0.24);
+    text-decoration: none;
+    font-size:larger;
+    border-radius: 3px;
+    padding: 5px;
+}
+
+
 .content {
     max-width: 1440px;
     margin: auto;
