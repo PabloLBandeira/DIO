@@ -15,7 +15,7 @@ a { color:blue; text-decoration: none;}
 .header{
     display: flex;
     align-items: center;
-    background: linear-gradient(grey, green);
+    background: bisque
 }
 
 .header span{
@@ -43,13 +43,14 @@ a { color:blue; text-decoration: none;}
 }
 
 .header nav ul li a{
-    color: whitesmoke;  
+    color: black;  
     font-size: large;  
 }
 
 .header nav ul li a:hover {
-    color: antiquewhite;
-    background-color: rgba(127, 255, 212, 0.24);
+    color: bisque;
+    font-weight: bold;
+    background-color: black;
     text-decoration: none;
     font-size:larger;
     border-radius: 3px;
