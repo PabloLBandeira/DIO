@@ -134,6 +134,10 @@ figcaption{
     font-style: italic;
 }
 
+blockquote {
+    font-style: italic;
+}
+
 .footer {
     display: flex;
     align-items: center;
